@@ -8,7 +8,7 @@ def GetEmpName():
 #write the GetHoursWorked function
 def GetHoursWorked():  
     hoursWorked = float(input("Enter hours worked: "))
-    return hoursWrkd
+    return hoursWorked
 
 #write the GetHourlyRate function
 def GetHourlyRate():
@@ -31,7 +31,7 @@ def CalcTaxAndNetPay(hours, hourlyrate, taxrate):
     
 
 def printinfo(empname, hours, hourlyrate,grosspay, taxrate, incometax, netpay):
-    print(empName, f'{hoursWrkd:, .2f}', f'{hourlyRate:, .2f}', f'{grossPay:, .2f}', f'{taxRate:, .1%}', f'{incomeTax:, .2f}', f'{netPay:, .2f')
+    print(empName, f'{hoursWorked:, .2f}', f'{hourlyRate:, .2f}', f'{grossPay:, .2f}', f'{taxRate:, .1%}', f'{incomeTax:, .2f}', f'{netPay:, .2f')
     print("Name:  ", empname) 
     print("Hours Worked: ", f"{hours:,.2f}")
     # write the lines of code to display hourlyrate, grosspay, taxrate, incometax and netpay with correct formattinghours}
@@ -53,7 +53,10 @@ def PrintTotals(TotEmployees, TotHours, TotGrossPay, TotTax, TotNetPay):
     print(f"Total Number Of Employees: {TotEmployees}")
     print(f"Total Hours Worked: {TotHours:,.2f}")
     # write the code to print  TotGrossPay, TotTax, and TotNetpay with 2 decimal places
-
+    print(f"Total number of hours: {TotHours} .2.f")
+    print(f"Total gross pay: {TotGrossPay, .2f")
+    print(f"Total tax: {TotTax}, .2f")
+    print(f"Total net pay: {TotNetPay}, .2f")
 
 if __name__ == "__main__":
     TotEmployees = 0
